@@ -10,9 +10,8 @@
 #define max 100
 
 using namespace std;
-// the header file
 
-class medicineType // base class
+class medicineType 
 {
 public:
 	int init;
@@ -28,7 +27,6 @@ public:
 medicineType::medicineType()
 {
 	init = 0;
-} // constructor for class CarType
 
 struct node // constract node
 {
