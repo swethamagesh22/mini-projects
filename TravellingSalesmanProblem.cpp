@@ -36,10 +36,10 @@ void backtrack(int t)
 		{
 			if(jour[path[t-1]][path[j]]!=0&&cost+jour[path[t-1]][path[j]]<bestcost)
 			{
-				swap(path[t],path[j]);//加入第i个城市
-                cost+=jour[path[t-1]][path[t]];//更新扩展后的路径的代价
-				backtrack(t+1);//递归搜索以x[i]为根的后续子树
-                cost-=jour[path[t-1]][path[t]];//搜索失败，回溯，回到
+				swap(path[t],path[j]);
+                cost+=jour[path[t-1]][path[t]];
+				backtrack(t+1);
+                cost-=jour[path[t-1]][path[t]];
                 swap(path[t],path[j]);
 			}
 		}		
