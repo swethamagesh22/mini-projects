@@ -26,5 +26,4 @@ def chatbot():
         translated_text = translate_text(user_input)
         print("Chatbot reply in German:", translated_text)
 
-# Start the chatbot
 chatbot()
